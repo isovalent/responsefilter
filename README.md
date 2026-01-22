@@ -2,6 +2,8 @@
 
 A CoreDNS plugin that filters DNS responses based on FQDN and IP CIDR blocklists to protect against DNS spoofing and malicious responses.
 
+authors: pijablon@cisco.com + vibecoding
+
 ## Overview
 
 The `responsefilter` plugin inspects DNS responses from upstream servers and blocks responses where the returned IP address matches a configured blocklist for specific domains. When a blocked response is detected, CoreDNS returns a `REFUSED` status instead of the spoofed IP.
